@@ -1,0 +1,432 @@
+/* ** VARIABLES ** */
+/* CARD VARIABLES */
+/* MIXINS */
+#content main {
+  margin-top: 50px;
+}
+
+#content main #subscriptionTypes .cards .card {
+  width: 24%;
+  background: #F3F3F3;
+  border: 1px solid #C1C1C1;
+  -webkit-box-shadow: 3px 3px 3px #C1C1C1;
+          box-shadow: 3px 3px 3px #C1C1C1;
+}
+
+#content main #subscriptionTypes .cards .card {
+  margin-right: 10px;
+  margin-top: 50px;
+}
+
+#content main #subscriptionTypes .cards .card header .text h4 {
+  color: white;
+  font-weight: normal;
+}
+
+#content main #subscriptionTypes .cards .card header .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#content main #subscriptionTypes .cards .card header .info h5 {
+  font-size: 12px;
+  text-align: right;
+  font-weight: normal;
+}
+
+#content main #subscriptionTypes .cards .card header .info h2 {
+  font-weight: normal;
+  text-align: left;
+}
+
+#content main #subscriptionTypes .cards .card header .info h2 + .description {
+  font-size: 16px;
+  text-align: left;
+}
+
+#content main #subscriptionTypes .cards .card header .info .description {
+  font-size: 25px;
+  text-align: right;
+}
+
+#content main #subscriptionTypes .cards .card header .blockUp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 70px;
+  height: 70px;
+  position: relative;
+  top: -25px;
+  -webkit-box-shadow: 1px 1px 5px #C1C1C1;
+          box-shadow: 1px 1px 5px #C1C1C1;
+}
+
+#content main #subscriptionTypes .cards .card header .blockUp img {
+  width: 40px;
+  padding: 20px;
+}
+
+#content main #subscriptionTypes .cards .card header .blockUp svg {
+  width: 40px;
+  height: auto;
+}
+
+#content main #subscriptionTypes .cards .card header .innerText {
+  -webkit-box-pack: start !important;
+      -ms-flex-pack: start !important;
+          justify-content: flex-start !important;
+  padding: 10px 20px;
+  color: white;
+}
+
+#content main #subscriptionTypes .cards .card header .innerText ul.listTool {
+  padding-left: 15px;
+  margin: 0;
+}
+
+#content main #subscriptionTypes .cards .card header .innerText ul.listTool li.itemTool a {
+  padding: 10px 12px;
+  color: white;
+  -webkit-transition: .2s linear;
+  transition: .2s linear;
+  border-radius: 3px;
+}
+
+#content main #subscriptionTypes .cards .card header .innerText ul.listTool li.itemTool a:hover {
+  background-color: #DEAD49;
+}
+
+#content main #subscriptionTypes .cards .card header .innerText ul.listTool li.itemTool a svg {
+  margin-right: 5px;
+  width: auto !important;
+}
+
+#content main #subscriptionTypes .cards .card footer {
+  margin-top: 5px;
+  padding: 10px 0;
+  border-top: 1px solid #C1C1C1;
+}
+
+#content main #subscriptionTypes .cards .card footer .card-btn {
+  font-size: 13px;
+}
+
+#content main #subscriptionTypes .cards .card footer .card-btn img {
+  width: 16px;
+  margin-right: 7px;
+}
+
+#content main #news .cards .card {
+  width: 33%;
+  background: #F3F3F3;
+  border: 1px solid #C1C1C1;
+  -webkit-box-shadow: 3px 3px 3px #C1C1C1;
+          box-shadow: 3px 3px 3px #C1C1C1;
+}
+
+#content main #news .cards .card {
+  margin-right: 10px;
+  margin-top: 50px;
+}
+
+#content main #news .cards .card header .text h4 {
+  color: white;
+  font-weight: normal;
+}
+
+#content main #news .cards .card header .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#content main #news .cards .card header .info h5 {
+  font-size: 12px;
+  text-align: right;
+  font-weight: normal;
+}
+
+#content main #news .cards .card header .info h2 {
+  font-weight: normal;
+  text-align: left;
+}
+
+#content main #news .cards .card header .info h2 + .description {
+  font-size: 16px;
+  text-align: left;
+}
+
+#content main #news .cards .card header .info .description {
+  font-size: 25px;
+  text-align: right;
+}
+
+#content main #news .cards .card header .blockUp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: -25px;
+  -webkit-box-shadow: 1px 1px 5px #C1C1C1;
+          box-shadow: 1px 1px 5px #C1C1C1;
+}
+
+#content main #news .cards .card header .blockUp img {
+  width: 100%;
+  padding: 20px;
+}
+
+#content main #news .cards .card header .blockUp svg {
+  width: 100%;
+  height: auto;
+}
+
+#content main #news .cards .card header .innerText {
+  -webkit-box-pack: start !important;
+      -ms-flex-pack: start !important;
+          justify-content: flex-start !important;
+  padding: 10px 20px;
+  color: white;
+}
+
+#content main #news .cards .card header .innerText ul.listTool {
+  padding-left: 15px;
+  margin: 0;
+}
+
+#content main #news .cards .card header .innerText ul.listTool li.itemTool a {
+  padding: 10px 12px;
+  color: white;
+  -webkit-transition: .2s linear;
+  transition: .2s linear;
+  border-radius: 3px;
+}
+
+#content main #news .cards .card header .innerText ul.listTool li.itemTool a:hover {
+  background-color: #DEAD49;
+}
+
+#content main #news .cards .card header .innerText ul.listTool li.itemTool a svg {
+  margin-right: 5px;
+  width: auto !important;
+}
+
+#content main #news .cards .card footer {
+  margin-top: 5px;
+  padding: 10px 0;
+  border-top: 1px solid #C1C1C1;
+}
+
+#content main #news .cards .card footer .card-btn {
+  font-size: 13px;
+}
+
+#content main #news .cards .card footer .card-btn img {
+  width: 16px;
+  margin-right: 7px;
+}
+
+#content main #tools {
+  padding-bottom: 70px;
+}
+
+#content main #tools .cards .card {
+  width: 50%;
+  background: #F3F3F3;
+  border: 1px solid #C1C1C1;
+  -webkit-box-shadow: 3px 3px 3px #C1C1C1;
+          box-shadow: 3px 3px 3px #C1C1C1;
+}
+
+#content main #tools .cards .card {
+  margin-right: 10px;
+  margin-top: 50px;
+}
+
+#content main #tools .cards .card header .text h4 {
+  color: white;
+  font-weight: normal;
+}
+
+#content main #tools .cards .card header .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#content main #tools .cards .card header .info h5 {
+  font-size: 12px;
+  text-align: right;
+  font-weight: normal;
+}
+
+#content main #tools .cards .card header .info h2 {
+  font-weight: normal;
+  text-align: left;
+}
+
+#content main #tools .cards .card header .info h2 + .description {
+  font-size: 16px;
+  text-align: left;
+}
+
+#content main #tools .cards .card header .info .description {
+  font-size: 25px;
+  text-align: right;
+}
+
+#content main #tools .cards .card header .blockUp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: -25px;
+  -webkit-box-shadow: 1px 1px 5px #C1C1C1;
+          box-shadow: 1px 1px 5px #C1C1C1;
+}
+
+#content main #tools .cards .card header .blockUp img {
+  width: 100%;
+  padding: 20px;
+}
+
+#content main #tools .cards .card header .blockUp svg {
+  width: 100%;
+  height: auto;
+}
+
+#content main #tools .cards .card header .innerText {
+  -webkit-box-pack: start !important;
+      -ms-flex-pack: start !important;
+          justify-content: flex-start !important;
+  padding: 10px 20px;
+  color: white;
+}
+
+#content main #tools .cards .card header .innerText ul.listTool {
+  padding-left: 15px;
+  margin: 0;
+}
+
+#content main #tools .cards .card header .innerText ul.listTool li.itemTool a {
+  padding: 10px 12px;
+  color: white;
+  -webkit-transition: .2s linear;
+  transition: .2s linear;
+  border-radius: 3px;
+}
+
+#content main #tools .cards .card header .innerText ul.listTool li.itemTool a:hover {
+  background-color: #DEAD49;
+}
+
+#content main #tools .cards .card header .innerText ul.listTool li.itemTool a svg {
+  margin-right: 5px;
+  width: auto !important;
+}
+
+#content main #tools .cards .card footer {
+  margin-top: 5px;
+  padding: 10px 0;
+  border-top: 1px solid #C1C1C1;
+}
+
+#content main #tools .cards .card footer .card-btn {
+  font-size: 13px;
+}
+
+#content main #tools .cards .card footer .card-btn img {
+  width: 16px;
+  margin-right: 7px;
+}
+
+#content main #tools .cards .card header .info p + p {
+  margin-top: 10px;
+}
+
+#content main #tools .cards .card header .info ul.taskList {
+  padding: 0;
+  margin-top: 0;
+}
+
+#content main #tools .cards .card header .info ul.taskList li.taskItem {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-top: 1px solid gray;
+  padding: 5px 0;
+}
+
+#content main #tools .cards .card header .info ul.taskList li.taskItem + #content main #tools .cards .card header .info ul.taskList li.taskItem {
+  border-top: none;
+}
+
+#content main #tools .cards .card header .info ul.taskList li.taskItem label {
+  cursor: pointer;
+}
+
+#content main #tools .cards .card header .info ul.taskList li.taskItem label input[type="checkbox"] {
+  margin-right: 7px;
+}
+
+#content main #tools .cards .card header .info ul.taskList li.taskItem .btn-task {
+  background: transparent;
+  border: none;
+  -webkit-transition: .2s linear;
+  transition: .2s linear;
+  cursor: pointer;
+}
+
+#content main #tools .cards .card header .info ul.taskList li.taskItem .btn-task:hover {
+  opacity: .8;
+}
+
+#content main #tools .cards .card header .info ul.taskList li.taskItem .btn-task img {
+  width: 25px;
+}
+
+#content main #tools .cards .card header .info table tr th {
+  color: #289E9E;
+}
+
+#content main #tools .cards .card header .info table tr td {
+  border-top: 1px solid gray;
+  padding: 5px 0;
+  text-align: center;
+}
+/*# sourceMappingURL=styleDashboard.css.map */

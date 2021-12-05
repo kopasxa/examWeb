@@ -1,0 +1,167 @@
+@import "./mixins"
+
+.green 
+    .blockUp
+        background: $card-img-green
+
+.yellow 
+    .blockUp
+        background: $card-img-yellow
+
+.blue 
+    .blockUp
+        background: $card-img-blue
+
+.purple 
+    .blockUp
+        background: $card-img-purple
+
+* 
+    box-sizing: border-box
+    
+body 
+    height: 100vh
+    padding: 0
+    margin: 0
+    font-family: $base-font
+    background: $base-bg
+    display: flex
+
+h1, h2, h3, h4, h5, h6 
+    color: $base-color
+    margin: 0
+
+.container
+    width: 95%
+    padding-right: 15px
+    padding-left: 15px
+    margin-right: auto
+    margin-left: auto
+
+.d-flex
+    display: flex
+
+.justify-content-center 
+    justify-content: center
+
+.justify-content-right
+    justify-content: flex-end
+
+.justify-content-between
+    justify-content: space-between
+
+.align-center 
+    align-items: center
+
+.align-end
+    align-items: flex-end
+
+.direction-column
+    flex-direction: column
+
+.no-list-style
+    list-style: none
+
+a
+    color: $base-color
+    text-decoration: none
+
+/* MENU */
+
+nav#mainNavMenu
+    z-index: 99999
+    transition: .1s linear
+    background: $menu-bg
+    width: $width-menu
+    height: 100%
+    position: fixed
+    bottom: 0
+    left: 0
+    top: 0
+    box-shadow: 5px 1px 3px $borders-color
+
+    header 
+        height: 100px
+        border-bottom: 1px solid $borders-color
+
+    main 
+        margin-top: 35px
+        ul.menu
+            padding-left: 0
+            li
+                margin-top: 10px
+                transition: .3s linear
+                a 
+                    padding: 10px 25px
+                svg 
+                    width: 25px
+                    margin-right: 15px
+                &:hover
+                    @include hoverItemMenu;
+        .active 
+            @include hoverItemMenu;
+
+.cards 
+    justify-content: space-between
+
+#content 
+    width: 100%
+    margin-left: $width-menu
+    margin-top: 30px
+    header
+        label 
+            left: 0
+            transition: .1s linear
+        .burger-menu
+            display: none
+            flex-direction: column
+            position: relative
+            margin-right: 15px
+            z-index: 999999
+            &::before
+                content: "\00D7"
+                position: fixed
+                font-size: 50px
+                color: gray
+                width: 35px
+                transition: .3s linear
+                opacity: 0
+                top: 0
+            .line
+                width: 35px
+                height: 3px
+                background-color: gray 
+                border-radius: 1px
+                margin-top: 6px
+                transition: .1s linear
+                display: flex
+
+        #burgerCheck:checked + label + nav#mainNavMenu 
+            left: 0
+            
+        #burgerCheck:checked + label
+            position: relative
+            left: 160px
+            .burger-menu
+                .line
+                    opacity: 0
+                &::before
+                    top: 15px
+                    opacity: 1
+
+footer#mainFooter
+    .wrapper 
+        border-top: 1px solid gray
+        color: grey
+        padding: 20px
+        p 
+            margin: 0
+        ul.menuList 
+            padding: 0
+            margin: 0
+            display: flex
+            li.menuItem
+                margin-right: 15px
+                a  
+                    font-weight: bold
+

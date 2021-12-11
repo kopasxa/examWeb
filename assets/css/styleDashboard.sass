@@ -1,0 +1,52 @@
+@import "./mixins"
+
+#content
+    main 
+        margin-top: 50px
+        #subscriptionTypes
+            .cards
+                .card 
+                    @include card(40px, 24%, 70px, 70px);
+        #news 
+            .cards
+                .card 
+                    @include card(100%, 33%, 100%, 100%);
+        #tools 
+            padding-bottom: 70px
+            .cards 
+                .card 
+                    @include card(100%, 50%, 100%, 100%);
+                    header 
+                        .info 
+                            p + p 
+                                margin-top: 10px
+                            ul.taskList
+                                padding: 0
+                                margin-top: 0
+                                li.taskItem
+                                    justify-content: space-between
+                                    border-top: 1px solid gray
+                                    padding: 5px 0
+                                    & + &
+                                        border-top: none
+                                    label
+                                        cursor: pointer
+                                        input[type="checkbox"]
+                                            margin-right: 7px
+                                    .btn-task 
+                                        background: transparent
+                                        border: none
+                                        transition: .2s linear
+                                        cursor: pointer
+                                        &:hover
+                                            opacity: .8
+                                        img 
+                                            width: 25px
+                            table
+                                tr 
+                                    th 
+                                        color: #289E9E
+                                    td 
+                                        border-top: 1px solid gray
+                                        padding: 5px 0
+                                        text-align: center

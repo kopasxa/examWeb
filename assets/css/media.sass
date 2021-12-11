@@ -1,0 +1,62 @@
+@media screen and (max-width: 1500px)
+    nav#mainNavMenu
+        width: 250px
+    #content 
+        margin-left: 250px
+    .cards .card header .info .description
+        font-size: 15px !important
+    #subscriptionTypes .cards .card header .blockUp svg 
+        width: 20px !important
+        height: auto
+    #subscriptionTypes .cards .card header .blockUp
+        width: 50px !important
+        height: 50px !important
+
+@media screen and (min-width: 1000px) and (max-width: 1200px)
+    #tools
+        .card 
+            &:nth-child(1)
+                ul 
+                    padding-left: 0 !important
+                a, p
+                    font-size: 12px
+
+@media screen and ( max-width: 1000px)
+    #subscriptionTypes, #tools 
+        .cards 
+            flex-wrap: wrap
+            .card 
+                flex-grow: 1
+                width: 33% !important
+    #tools .cards 
+        .card 
+            width: 100% !important
+    .profileSettings 
+        flex-direction: column-reverse
+        .card
+            width: 100% !important
+            .info form 
+                button 
+                    width: 75%
+
+@media screen and ( max-width: 800px)
+    nav#mainNavMenu 
+        left: -999px 
+    #content 
+        margin-left: 0
+        .burger-menu
+            display: flex !important
+    
+@media screen and ( max-width: 650px)
+    #news 
+        .cards
+            flex-wrap: wrap
+            .card
+                flex-grow: 1
+                width: 100% !important
+
+@media screen and ( max-width: 500px)
+    #subscriptionTypes .cards 
+        .card 
+            flex-grow: 1
+            width: 100% !important

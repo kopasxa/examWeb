@@ -1,0 +1,88 @@
+@import ./variables
+
+/* MIXINS */
+
+@mixin hoverItemMenu()
+    background-color: $hover-bacground-color;
+    border-radius: 3px
+    box-shadow: 1px 1px 3px gray
+    a
+        color: $hover-color
+        svg path + path
+            fill: white 
+
+@mixin card($svgWidth, $cardWidth, $width, $height: auto)
+    &
+        width: $cardWidth
+        background: $card-bg
+        border: 1px solid $borders-color
+        box-shadow: 3px 3px 3px $borders-color
+    &
+        margin-right: 10px
+        margin-top: 50px
+    header
+        .text 
+            h4 
+                color: white
+                font-weight: normal
+        .info
+            display: flex
+            flex-direction: column
+           
+            h5 
+                font-size: 12px
+                text-align: right
+                font-weight: normal
+            h2 
+                font-weight: normal
+                text-align: left
+            h2 + .description 
+                font-size: 16px
+                text-align: left
+            .description
+                font-size: 25px
+                text-align: right
+        .blockUp
+            display: flex
+            justify-content: center
+            align-items: center
+            width: $width
+            height: $height
+            position: relative
+            top: -25px
+            box-shadow: 1px 1px 5px $borders-color
+            img 
+                width: $svgWidth
+                padding: 20px
+            svg 
+                width: $svgWidth
+                height: auto
+        .innerText
+            justify-content: flex-start !important
+            padding: 10px 20px
+            color: white
+            p 
+                margin: 7px 0 0
+            ul.listTool
+                padding-left: 15px
+                margin: 0
+                li.itemTool 
+                    a 
+                        padding: 10px 12px
+                        color: white
+                        transition: .2s linear
+                        border-radius: 3px
+                        &:hover
+                            background-color: #DEAD49
+                        svg 
+                            margin-right: 5px
+                            width: auto !important
+    footer
+        margin-top: 5px
+        padding: 10px 0
+        border-top: 1px solid $borders-color
+        .card-btn
+            font-size: 13px
+            img 
+                width: 16px
+                margin-right: 7px

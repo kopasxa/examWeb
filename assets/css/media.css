@@ -1,0 +1,93 @@
+@media screen and (max-width: 1500px) {
+  nav#mainNavMenu {
+    width: 250px;
+  }
+  #content {
+    margin-left: 250px;
+  }
+  .cards .card header .info .description {
+    font-size: 15px !important;
+  }
+  #subscriptionTypes .cards .card header .blockUp svg {
+    width: 20px !important;
+    height: auto;
+  }
+  #subscriptionTypes .cards .card header .blockUp {
+    width: 50px !important;
+    height: 50px !important;
+  }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1200px) {
+  #tools .card:nth-child(1) ul {
+    padding-left: 0 !important;
+  }
+  #tools .card:nth-child(1) a, #tools .card:nth-child(1) p {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  #subscriptionTypes .cards, #tools .cards {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #subscriptionTypes .cards .card, #tools .cards .card {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    width: 33% !important;
+  }
+  #tools .cards .card {
+    width: 100% !important;
+  }
+  .profileSettings {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .profileSettings .card {
+    width: 100% !important;
+  }
+  .profileSettings .card .info form button {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  nav#mainNavMenu {
+    left: -999px;
+  }
+  #content {
+    margin-left: 0;
+  }
+  #content .burger-menu {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  #news .cards {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #news .cards .card {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    width: 100% !important;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #subscriptionTypes .cards .card {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    width: 100% !important;
+  }
+}
+/*# sourceMappingURL=media.css.map */

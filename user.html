@@ -102,80 +102,78 @@
                 <h2>User Profile</h2>
             </header>
             <main>
-                <div class="container">
-                    <div class="profileSettings d-flex">
-                        <div class="card purple" id="editProfile">
-                            <div class="container">
-                                <header class="d-flex direction-column">
-                                    <div class="blockUp innerText">
-                                        <div class="text d-flex direction-column">
-                                            <h4>Edit profile</h4>
-                                            <p>Complete your profile</p>
+                <div class="profileSettings d-flex">
+                    <div class="card purple" id="editProfile">
+                        <div class="container">
+                            <header class="d-flex direction-column">
+                                <div class="blockUp innerText">
+                                    <div class="text d-flex direction-column">
+                                        <h4>Edit profile</h4>
+                                        <p>Complete your profile</p>
+                                    </div>
+                                </div>
+                                <div class="info">
+                                    <form action="updateUserInfo.php" method="GET" class="d-flex direction-column align-end">
+                                        <div class="wrapper">
+                                            <label class="d-flex direction-column">
+                                                <p>Company</p>
+                                                <input type="text" name="company">
+                                            </label>
+                                            <label class="d-flex direction-column">
+                                                <p>Username</p>
+                                                <input type="text" name="username">
+                                            </label>
+                                            <label class="d-flex direction-column">
+                                                <p>Email</p>
+                                                <input type="email" name="email">
+                                            </label>
+                                            <label class="d-flex direction-column">
+                                                <p>First name</p>
+                                                <input type="text" name="fname">
+                                            </label>
+                                            <label class="d-flex direction-column">
+                                                <p>Last name</p>
+                                                <input type="text" name="lname">
+                                            </label>
+                                            <label class="d-flex direction-column w-100">
+                                                <p>Adress</p>
+                                                <input type="text" name="adress">
+                                            </label>
+                                            <label class="d-flex direction-column">
+                                                <p>City</p>
+                                                <input type="text" name="city">
+                                            </label>
+                                            <label class="d-flex direction-column">
+                                                <p>Country</p>
+                                                <input type="text" name="country">
+                                            </label>
+                                            <label class="d-flex direction-column">
+                                                <p>Postal code</p>
+                                                <input type="text" name="pcode">
+                                            </label>
+                                            <label class="d-flex direction-column w-100">
+                                                <p>About me</p>
+                                                <textarea name="about" cols="30" rows="2"></textarea>
+                                            </label>
                                         </div>
-                                    </div>
-                                    <div class="info">
-                                        <form action="updateUserInfo.php" method="GET" class="d-flex direction-column align-end">
-                                            <div class="wrapper">
-                                                <label class="d-flex direction-column">
-                                                    <p>Company</p>
-                                                    <input type="text" name="company">
-                                                </label>
-                                                <label class="d-flex direction-column">
-                                                    <p>Username</p>
-                                                    <input type="text" name="username">
-                                                </label>
-                                                <label class="d-flex direction-column">
-                                                    <p>Email</p>
-                                                    <input type="email" name="email">
-                                                </label>
-                                                <label class="d-flex direction-column">
-                                                    <p>First name</p>
-                                                    <input type="text" name="fname">
-                                                </label>
-                                                <label class="d-flex direction-column">
-                                                    <p>Last name</p>
-                                                    <input type="text" name="lname">
-                                                </label>
-                                                <label class="d-flex direction-column w-100">
-                                                    <p>Adress</p>
-                                                    <input type="text" name="adress">
-                                                </label>
-                                                <label class="d-flex direction-column">
-                                                    <p>City</p>
-                                                    <input type="text" name="city">
-                                                </label>
-                                                <label class="d-flex direction-column">
-                                                    <p>Country</p>
-                                                    <input type="text" name="country">
-                                                </label>
-                                                <label class="d-flex direction-column">
-                                                    <p>Postal code</p>
-                                                    <input type="text" name="pcode">
-                                                </label>
-                                                <label class="d-flex direction-column w-100">
-                                                    <p>About me</p>
-                                                    <textarea name="about" cols="30" rows="2"></textarea>
-                                                </label>
-                                            </div>
-                                            <button>UPDATE PROFILE</button>
-                                        </form>
-                                    </div>
-                                </header>
-                            </div>
+                                        <button>UPDATE PROFILE</button>
+                                    </form>
+                                </div>
+                            </header>
                         </div>
-                        <div class="card purple" id="profile">
-                            <div class="container">
-                                <header class="d-flex direction-column align-center">
-                                    <div class="userPhoto">
-                                        <img src="assets/img/avatar.jpg" alt="userphoto">
-                                    </div>
-                                    <p>CEO</p>
-                                    <h4>Alex Thompson</h4>
-                                </header>
-                                <footer>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quasi necessitatibus possimus tempora nulla sint nostrum a omnis tenetur dolores. A necessitatibus minima exercitationem deleniti nisi rerum quo, labore quidem.</p>
-                                </footer>
-                            </div>
+                    </div>
+                    <div class="card purple" id="profile">
+                        <div class="container">
+                            <header class="d-flex direction-column align-center">
+                                <div class="userPhoto">
+                                    <img src="assets/img/avatar.jpg" alt="userphoto">
+                                </div>
+                                <p>CEO</p>
+                                <h4>Alex Thompson</h4>
+                            </header>
+                            <footer>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quasi necessitatibus possimus tempora nulla sint nostrum a omnis tenetur dolores. A necessitatibus minima exercitationem deleniti nisi rerum quo, labore quidem.</p>
+                            </footer>
                         </div>
                     </div>
                 </div>
